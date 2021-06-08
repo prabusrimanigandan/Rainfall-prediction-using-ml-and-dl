@@ -1,0 +1,2138 @@
+2021-05-29 13:03:27,715:INFO:Initializing load_model()
+2021-05-29 13:03:27,715:INFO:load_model(model_name=./model/Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-05-29 13:05:03,402:INFO:Initializing load_model()
+2021-05-29 13:05:03,402:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel.pkl, platform=None, authentication=None, verbose=True)
+2021-05-29 13:06:13,375:INFO:Initializing load_model()
+2021-05-29 13:06:13,375:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-05-29 13:06:13,600:INFO:Initializing predict_model()
+2021-05-29 13:06:13,601:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-05-29 13:06:13,601:INFO:Checking exceptions
+2021-05-29 13:06:13,601:INFO:Preloading libraries
+2021-05-29 13:06:13,631:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:06:13,631:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:06:13,631:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:06:13,631:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:06:13,631:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:06:13,631:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:06:13,631:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:06:13,632:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:06:13,633:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:06:13,634:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:06:13,635:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:06:13,636:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:06:13,637:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:06:13,637:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:06:13,637:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:06:13,637:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:06:13,637:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:06:13,637:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 13:06:13,721:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:06:13,721:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:06:13,721:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:06:13,721:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:06:13,723:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:06:13,723:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:06:13,724:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:06:13,724:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:06:13,724:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:06:13,724:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:06:13,724:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:06:13,725:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:06:13,725:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:06:13,725:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:06:13,725:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:06:13,725:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:06:13,725:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:06:13,726:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:06:13,726:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:06:13,726:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:06:13,727:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:06:13,727:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:06:13,727:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:06:13,727:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:06:13,727:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:06:13,728:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:06:13,728:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:06:13,728:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:06:13,728:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:06:13,728:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:06:13,728:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:06:13,729:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:06:13,729:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:06:13,729:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:06:13,729:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:06:13,729:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:06:13,730:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:06:13,730:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:06:13,730:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:06:13,730:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:06:13,730:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:06:13,730:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:06:13,731:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:06:13,731:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:06:13,731:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:06:13,731:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:06:13,731:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:06:13,732:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:06:13,732:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:06:13,732:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:06:13,732:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:06:13,732:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:06:13,732:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:06:13,733:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:06:13,733:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:06:13,733:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:06:13,733:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:06:13,733:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:06:13,734:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:06:13,734:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:06:13,734:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:06:13,734:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:06:13,734:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:06:13,734:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:06:13,735:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:06:13,735:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:06:13,735:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:06:13,735:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:06:13,735:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:06:13,736:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:06:13,736:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:06:13,736:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:06:13,736:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:06:13,736:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:06:13,736:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:06:13,737:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:06:13,737:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:06:13,737:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:06:13,737:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:06:13,737:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 13:08:01,316:INFO:Initializing load_model()
+2021-05-29 13:08:01,316:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-05-29 13:08:01,514:INFO:Initializing predict_model()
+2021-05-29 13:08:01,514:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-05-29 13:08:01,527:INFO:Checking exceptions
+2021-05-29 13:08:01,533:INFO:Preloading libraries
+2021-05-29 13:08:01,565:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:08:01,566:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:08:01,567:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:08:01,568:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:08:01,569:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:08:01,570:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:08:01,571:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:08:01,572:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:08:01,572:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:08:01,572:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:08:01,572:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:08:01,572:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 13:08:01,649:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:08:01,649:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:08:01,650:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:08:01,650:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:08:01,650:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:08:01,650:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:08:01,650:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:08:01,650:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:08:01,651:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:08:01,651:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:08:01,651:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:08:01,651:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:08:01,651:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:08:01,651:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:08:01,652:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:08:01,652:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:08:01,652:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:08:01,652:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:08:01,652:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:08:01,652:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:08:01,652:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:08:01,653:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:08:01,653:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:08:01,653:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:08:01,653:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:08:01,653:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:08:01,653:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:08:01,654:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:08:01,654:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:08:01,654:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:08:01,654:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:08:01,654:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:08:01,654:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:08:01,654:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:08:01,655:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:08:01,655:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:08:01,655:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:08:01,655:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:08:01,655:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:08:01,655:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:08:01,656:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:08:01,656:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:08:01,656:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:08:01,656:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:08:01,656:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:08:01,656:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:08:01,657:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:08:01,657:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:08:01,657:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:08:01,658:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:08:01,658:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:08:01,658:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:08:01,658:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:08:01,658:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:08:01,659:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:08:01,659:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:08:01,659:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:08:01,659:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:08:01,659:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:08:01,659:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:08:01,660:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:08:01,660:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:08:01,660:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:08:01,660:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:08:01,660:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:08:01,660:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:08:01,660:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:08:01,661:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:08:01,661:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:08:01,661:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:08:01,661:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:08:01,661:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:08:01,661:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:08:01,662:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:08:01,662:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:08:01,662:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:08:01,662:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:08:01,662:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:08:01,662:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:08:01,662:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 13:09:52,368:INFO:Initializing load_model()
+2021-05-29 13:09:52,368:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-05-29 13:09:52,585:INFO:Initializing predict_model()
+2021-05-29 13:09:52,585:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-05-29 13:09:52,585:INFO:Checking exceptions
+2021-05-29 13:09:52,585:INFO:Preloading libraries
+2021-05-29 13:09:52,616:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:09:52,616:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:09:52,616:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:09:52,616:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:09:52,617:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:09:52,618:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:09:52,619:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:09:52,620:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:09:52,621:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:09:52,621:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:09:52,621:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:09:52,621:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:09:52,621:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:09:52,621:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:09:52,621:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:09:52,621:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:09:52,621:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:09:52,622:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:09:52,623:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:09:52,624:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:09:52,624:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:09:52,625:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:09:52,626:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:09:52,626:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 13:09:52,717:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:09:52,717:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:09:52,717:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:09:52,717:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:09:52,718:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:09:52,718:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:09:52,718:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:09:52,718:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:09:52,718:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:09:52,718:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:09:52,719:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:09:52,719:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:09:52,719:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:09:52,719:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:09:52,719:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:09:52,720:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:09:52,720:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:09:52,720:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:09:52,720:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:09:52,720:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:09:52,720:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:09:52,721:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:09:52,721:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:09:52,721:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:09:52,721:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:09:52,721:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:09:52,722:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:09:52,722:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:09:52,723:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:09:52,723:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:09:52,724:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:09:52,724:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:09:52,724:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:09:52,724:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:09:52,725:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:09:52,725:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:09:52,726:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:09:52,726:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:09:52,726:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:09:52,727:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:09:52,727:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:09:52,727:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:09:52,727:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:09:52,728:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:09:52,728:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:09:52,728:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:09:52,728:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:09:52,728:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:09:52,728:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:09:52,729:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:09:52,729:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:09:52,729:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:09:52,729:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:09:52,729:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:09:52,730:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:09:52,730:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:09:52,730:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:09:52,730:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:09:52,730:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:09:52,730:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:09:52,731:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:09:52,731:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:09:52,731:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:09:52,731:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:09:52,731:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:09:52,732:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:09:52,732:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:09:52,732:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:09:52,732:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:09:52,732:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:09:52,732:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:09:52,733:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:09:52,733:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:09:52,733:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:09:52,733:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:09:52,733:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:09:52,734:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:09:52,734:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:09:52,734:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:09:52,734:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 13:13:06,935:INFO:Initializing load_model()
+2021-05-29 13:13:06,935:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-05-29 13:13:07,067:INFO:Initializing predict_model()
+2021-05-29 13:13:07,067:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-05-29 13:13:07,067:INFO:Checking exceptions
+2021-05-29 13:13:07,067:INFO:Preloading libraries
+2021-05-29 13:13:07,094:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:13:07,094:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:13:07,094:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:13:07,094:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:13:07,095:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:13:07,096:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:13:07,096:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:13:07,096:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:13:07,096:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:13:07,096:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:13:07,096:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:13:07,096:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:13:07,096:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:13:07,096:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:13:07,097:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:13:07,098:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:13:07,099:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:13:07,100:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:13:07,101:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:13:07,101:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:13:07,101:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:13:07,101:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:13:07,101:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:13:07,101:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:13:07,101:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:13:07,101:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 13:13:07,315:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:13:07,315:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:13:07,315:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:13:07,315:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:13:07,315:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:13:07,315:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:13:07,315:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:13:07,315:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:13:07,316:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:13:07,317:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:13:07,318:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:13:07,319:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:13:07,320:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:13:07,321:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:13:07,321:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:13:07,321:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:13:07,321:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:13:07,321:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:13:07,321:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:13:07,321:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:13:07,321:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 13:14:31,182:INFO:Initializing load_model()
+2021-05-29 13:14:31,182:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-05-29 13:14:31,317:INFO:Initializing predict_model()
+2021-05-29 13:14:31,317:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-05-29 13:14:31,317:INFO:Checking exceptions
+2021-05-29 13:14:31,317:INFO:Preloading libraries
+2021-05-29 13:14:31,349:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:14:31,349:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:14:31,349:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:14:31,349:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:14:31,349:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:14:31,350:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:14:31,351:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:14:31,352:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:14:31,353:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:14:31,353:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:14:31,353:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:14:31,353:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:14:31,353:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:14:31,353:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:14:31,353:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:14:31,353:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:14:31,353:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:14:31,354:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:14:31,354:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:14:31,354:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:14:31,354:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:14:31,355:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:14:31,355:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:14:31,355:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:14:31,356:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:14:31,356:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:14:31,356:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:14:31,356:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:14:31,356:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:14:31,356:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:14:31,357:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:14:31,357:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:14:31,357:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:14:31,357:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:14:31,357:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:14:31,357:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:14:31,357:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:14:31,357:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:14:31,358:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:14:31,358:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:14:31,358:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:14:31,358:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:14:31,358:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:14:31,358:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:14:31,358:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:14:31,358:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 13:14:31,443:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 13:14:31,443:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 13:14:31,443:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 13:14:31,443:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 13:14:31,444:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 13:14:31,444:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 13:14:31,444:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 13:14:31,444:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 13:14:31,444:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 13:14:31,445:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 13:14:31,445:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 13:14:31,445:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 13:14:31,445:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 13:14:31,445:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 13:14:31,445:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 13:14:31,446:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 13:14:31,446:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 13:14:31,446:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 13:14:31,446:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 13:14:31,446:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 13:14:31,447:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 13:14:31,447:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 13:14:31,447:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 13:14:31,447:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 13:14:31,447:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 13:14:31,447:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 13:14:31,448:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 13:14:31,448:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 13:14:31,448:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 13:14:31,448:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 13:14:31,448:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 13:14:31,449:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 13:14:31,449:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 13:14:31,449:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 13:14:31,449:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 13:14:31,449:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 13:14:31,449:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 13:14:31,450:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 13:14:31,450:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 13:14:31,450:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 13:14:31,450:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 13:14:31,450:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 13:14:31,451:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 13:14:31,451:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 13:14:31,451:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 13:14:31,451:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 13:14:31,451:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 13:14:31,452:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 13:14:31,452:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 13:14:31,452:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 13:14:31,452:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 13:14:31,452:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 13:14:31,453:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 13:14:31,453:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 13:14:31,453:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 13:14:31,453:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 13:14:31,453:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 13:14:31,454:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 13:14:31,454:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 13:14:31,455:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 13:14:31,455:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 13:14:31,455:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 13:14:31,456:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 13:14:31,456:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 13:14:31,456:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 13:14:31,457:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 13:14:31,457:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 13:14:31,457:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 13:14:31,457:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 13:14:31,458:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 13:14:31,458:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 13:14:31,458:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 13:14:31,458:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 13:14:31,458:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 13:14:31,459:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 13:14:31,459:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 13:14:31,459:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 13:14:31,459:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 13:14:31,459:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 13:14:31,459:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 16:42:55,279:INFO:Initializing load_model()
+2021-05-29 16:42:55,279:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-05-29 16:42:55,485:INFO:Initializing predict_model()
+2021-05-29 16:42:55,486:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-05-29 16:42:55,487:INFO:Checking exceptions
+2021-05-29 16:42:55,487:INFO:Preloading libraries
+2021-05-29 16:42:55,553:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 16:42:55,554:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 16:42:55,554:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 16:42:55,554:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 16:42:55,554:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 16:42:55,554:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 16:42:55,555:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 16:42:55,555:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 16:42:55,555:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 16:42:55,555:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 16:42:55,556:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 16:42:55,556:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 16:42:55,556:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 16:42:55,556:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 16:42:55,556:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 16:42:55,556:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 16:42:55,556:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 16:42:55,557:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 16:42:55,557:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 16:42:55,557:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 16:42:55,557:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 16:42:55,557:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 16:42:55,557:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 16:42:55,558:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 16:42:55,558:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 16:42:55,558:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 16:42:55,558:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 16:42:55,558:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 16:42:55,558:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 16:42:55,558:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 16:42:55,559:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 16:42:55,559:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 16:42:55,559:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 16:42:55,559:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 16:42:55,559:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 16:42:55,559:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 16:42:55,559:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 16:42:55,560:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 16:42:55,560:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 16:42:55,560:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 16:42:55,560:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 16:42:55,560:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 16:42:55,560:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 16:42:55,560:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 16:42:55,560:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 16:42:55,561:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 16:42:55,561:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 16:42:55,561:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 16:42:55,561:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 16:42:55,561:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 16:42:55,561:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 16:42:55,561:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 16:42:55,562:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 16:42:55,562:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 16:42:55,562:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 16:42:55,562:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 16:42:55,562:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 16:42:55,562:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 16:42:55,562:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 16:42:55,562:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 16:42:55,563:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 16:42:55,563:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 16:42:55,563:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 16:42:55,563:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 16:42:55,563:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 16:42:55,563:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 16:42:55,563:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 16:42:55,564:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 16:42:55,564:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 16:42:55,564:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 16:42:55,564:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 16:42:55,564:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 16:42:55,564:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 16:42:55,564:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 16:42:55,565:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 16:42:55,565:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 16:42:55,565:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 16:42:55,565:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 16:42:55,565:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 16:42:55,566:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 16:42:55,690:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 16:42:55,691:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 16:42:55,691:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 16:42:55,691:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 16:42:55,691:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 16:42:55,691:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 16:42:55,691:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 16:42:55,692:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 16:42:55,692:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 16:42:55,692:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 16:42:55,692:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 16:42:55,692:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 16:42:55,693:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 16:42:55,693:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 16:42:55,693:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 16:42:55,693:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 16:42:55,694:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 16:42:55,694:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 16:42:55,694:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 16:42:55,694:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 16:42:55,694:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 16:42:55,695:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 16:42:55,695:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 16:42:55,695:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 16:42:55,695:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 16:42:55,695:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 16:42:55,695:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 16:42:55,695:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 16:42:55,696:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 16:42:55,696:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 16:42:55,696:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 16:42:55,697:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 16:42:55,697:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 16:42:55,697:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 16:42:55,698:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 16:42:55,698:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 16:42:55,698:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 16:42:55,698:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 16:42:55,698:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 16:42:55,698:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 16:42:55,699:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 16:42:55,699:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 16:42:55,699:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 16:42:55,699:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 16:42:55,699:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 16:42:55,700:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 16:42:55,700:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 16:42:55,700:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 16:42:55,700:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 16:42:55,701:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 16:42:55,701:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 16:42:55,701:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 16:42:55,701:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 16:42:55,701:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 16:42:55,702:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 16:42:55,702:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 16:42:55,702:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 16:42:55,702:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 16:42:55,702:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 16:42:55,703:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 16:42:55,703:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 16:42:55,703:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 16:42:55,703:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 16:42:55,703:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 16:42:55,703:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 16:42:55,704:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 16:42:55,704:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 16:42:55,704:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 16:42:55,704:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 16:42:55,704:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 16:42:55,704:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 16:42:55,705:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 16:42:55,705:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 16:42:55,705:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 16:42:55,705:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 16:42:55,705:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 16:42:55,705:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 16:42:55,706:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 16:42:55,706:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 16:42:55,706:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 21:42:05,963:INFO:Initializing load_model()
+2021-05-29 21:42:05,963:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-05-29 21:42:06,248:INFO:Initializing predict_model()
+2021-05-29 21:42:06,255:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-05-29 21:42:06,256:INFO:Checking exceptions
+2021-05-29 21:42:06,256:INFO:Preloading libraries
+2021-05-29 21:42:06,364:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 21:42:06,469:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 21:42:06,507:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 21:42:06,507:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 21:42:06,507:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 21:42:06,508:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 21:42:06,508:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 21:42:06,508:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 21:42:06,508:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 21:42:06,508:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 21:42:06,509:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 21:42:06,509:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 21:42:06,509:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 21:42:06,509:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 21:42:06,509:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 21:42:06,509:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 21:42:06,510:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 21:42:06,510:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 21:42:06,510:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 21:42:06,510:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 21:42:06,510:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 21:42:06,510:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 21:42:06,511:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 21:42:06,511:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 21:42:06,511:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 21:42:06,511:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 21:42:06,511:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 21:42:06,512:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 21:42:06,512:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 21:42:06,512:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 21:42:06,512:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 21:42:06,512:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 21:42:06,513:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 21:42:06,513:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 21:42:06,513:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 21:42:06,513:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 21:42:06,513:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 21:42:06,514:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 21:42:06,514:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 21:42:06,514:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 21:42:06,514:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 21:42:06,514:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 21:42:06,515:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 21:42:06,516:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 21:42:06,517:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 21:42:06,518:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 21:42:06,519:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 21:42:06,521:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 21:42:06,522:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 21:42:06,523:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 21:42:06,523:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 21:42:06,523:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 21:42:06,523:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 21:42:06,523:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 21:42:06,523:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 21:42:06,523:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 21:42:06,524:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 21:42:06,525:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 21:42:06,525:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 21:42:06,525:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 21:42:06,525:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 21:42:06,526:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 21:42:06,526:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 21:42:06,526:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 21:42:06,526:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 21:42:06,526:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 21:42:06,528:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 21:42:06,528:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 21:42:06,528:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 21:42:06,541:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 21:42:06,547:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 21:42:06,559:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 21:42:06,567:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 21:42:06,570:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 21:42:06,571:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 21:42:06,571:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 21:42:06,572:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 21:42:06,573:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 21:42:06,574:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 21:42:06,574:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-05-29 21:42:06,849:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-05-29 21:42:06,849:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-05-29 21:42:06,849:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-05-29 21:42:06,849:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-05-29 21:42:06,850:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-05-29 21:42:06,850:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-05-29 21:42:06,850:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-05-29 21:42:06,850:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-05-29 21:42:06,850:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-05-29 21:42:06,851:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-05-29 21:42:06,851:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-05-29 21:42:06,852:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-05-29 21:42:06,852:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-05-29 21:42:06,853:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-05-29 21:42:06,853:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-05-29 21:42:06,854:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-05-29 21:42:06,855:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-05-29 21:42:06,855:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-05-29 21:42:06,855:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-05-29 21:42:06,855:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-05-29 21:42:06,858:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-05-29 21:42:06,858:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-05-29 21:42:06,859:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-05-29 21:42:06,859:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-05-29 21:42:06,859:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-05-29 21:42:06,859:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-05-29 21:42:06,860:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-05-29 21:42:06,860:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-05-29 21:42:06,860:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-05-29 21:42:06,861:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-05-29 21:42:06,861:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-05-29 21:42:06,861:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-05-29 21:42:06,862:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-05-29 21:42:06,862:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-05-29 21:42:06,862:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-05-29 21:42:06,862:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-05-29 21:42:06,880:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-05-29 21:42:06,881:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-05-29 21:42:06,882:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-05-29 21:42:06,883:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-05-29 21:42:06,884:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-05-29 21:42:06,890:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-05-29 21:42:06,899:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-05-29 21:42:06,901:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-05-29 21:42:06,909:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-05-29 21:42:06,909:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-05-29 21:42:06,909:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-05-29 21:42:06,910:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-05-29 21:42:06,910:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-05-29 21:42:06,910:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-05-29 21:42:06,910:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-05-29 21:42:06,910:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-05-29 21:42:06,910:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-05-29 21:42:06,911:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-05-29 21:42:06,912:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-05-29 21:42:06,912:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-05-29 21:42:06,912:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-05-29 21:42:06,913:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-05-29 21:42:06,913:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-05-29 21:42:06,914:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-05-29 21:42:06,914:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-05-29 21:42:06,914:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-05-29 21:42:06,916:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-05-29 21:42:06,916:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-05-29 21:42:06,916:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-05-29 21:42:06,916:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-05-29 21:42:06,916:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-05-29 21:42:06,917:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-05-29 21:42:06,917:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-05-29 21:42:06,917:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-05-29 21:42:06,918:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-05-29 21:42:06,922:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-05-29 21:42:06,923:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-05-29 21:42:06,923:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-05-29 21:42:06,926:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-05-29 21:42:06,928:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-05-29 21:42:06,929:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-05-29 21:42:06,929:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-05-29 21:42:06,929:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-05-29 21:42:06,929:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-06-03 14:19:38,705:INFO:Initializing load_model()
+2021-06-03 14:19:38,727:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-06-03 14:19:39,011:INFO:Initializing predict_model()
+2021-06-03 14:19:39,012:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-03 14:19:39,012:INFO:Checking exceptions
+2021-06-03 14:19:39,012:INFO:Preloading libraries
+2021-06-03 14:19:39,092:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-06-03 14:19:39,093:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-06-03 14:19:39,093:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-06-03 14:19:39,094:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-06-03 14:19:39,094:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-06-03 14:19:39,094:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-06-03 14:19:39,095:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-06-03 14:19:39,095:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-06-03 14:19:39,096:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-06-03 14:19:39,097:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-06-03 14:19:39,097:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-06-03 14:19:39,097:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-06-03 14:19:39,097:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-06-03 14:19:39,098:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-06-03 14:19:39,098:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-06-03 14:19:39,098:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-06-03 14:19:39,098:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-06-03 14:19:39,098:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-06-03 14:19:39,098:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-06-03 14:19:39,099:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-06-03 14:19:39,099:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-06-03 14:19:39,099:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-06-03 14:19:39,099:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-06-03 14:19:39,099:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-06-03 14:19:39,099:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-06-03 14:19:39,100:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-06-03 14:19:39,100:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-06-03 14:19:39,101:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-06-03 14:19:39,101:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-06-03 14:19:39,101:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-06-03 14:19:39,102:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-06-03 14:19:39,102:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-06-03 14:19:39,102:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-06-03 14:19:39,102:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-06-03 14:19:39,102:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-06-03 14:19:39,103:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-06-03 14:19:39,103:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-06-03 14:19:39,103:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-06-03 14:19:39,103:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-06-03 14:19:39,104:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-06-03 14:19:39,104:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-06-03 14:19:39,104:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-06-03 14:19:39,104:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-06-03 14:19:39,105:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-06-03 14:19:39,105:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-06-03 14:19:39,105:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-06-03 14:19:39,105:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-06-03 14:19:39,106:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-06-03 14:19:39,106:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-06-03 14:19:39,107:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-06-03 14:19:39,107:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-06-03 14:19:39,108:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-06-03 14:19:39,109:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-06-03 14:19:39,109:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-06-03 14:19:39,109:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-06-03 14:19:39,109:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-06-03 14:19:39,109:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-06-03 14:19:39,110:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-06-03 14:19:39,110:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-06-03 14:19:39,111:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-06-03 14:19:39,111:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-06-03 14:19:39,111:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-06-03 14:19:39,112:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-06-03 14:19:39,112:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-06-03 14:19:39,113:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-06-03 14:19:39,113:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-06-03 14:19:39,114:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-06-03 14:19:39,114:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-06-03 14:19:39,114:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-06-03 14:19:39,114:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-06-03 14:19:39,115:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-06-03 14:19:39,115:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-06-03 14:19:39,115:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-06-03 14:19:39,115:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-06-03 14:19:39,116:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-06-03 14:19:39,116:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-06-03 14:19:39,116:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-06-03 14:19:39,117:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-06-03 14:19:39,117:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-06-03 14:19:39,117:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-06-03 14:19:39,327:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-06-03 14:19:39,327:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-06-03 14:19:39,327:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-06-03 14:19:39,328:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-06-03 14:19:39,328:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-06-03 14:19:39,328:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-06-03 14:19:39,329:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-06-03 14:19:39,329:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-06-03 14:19:39,329:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-06-03 14:19:39,329:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-06-03 14:19:39,330:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-06-03 14:19:39,330:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-06-03 14:19:39,330:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-06-03 14:19:39,330:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-06-03 14:19:39,331:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-06-03 14:19:39,331:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-06-03 14:19:39,331:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-06-03 14:19:39,331:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-06-03 14:19:39,331:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-06-03 14:19:39,332:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-06-03 14:19:39,332:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-06-03 14:19:39,332:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-06-03 14:19:39,332:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-06-03 14:19:39,333:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-06-03 14:19:39,333:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-06-03 14:19:39,334:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-06-03 14:19:39,334:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-06-03 14:19:39,334:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-06-03 14:19:39,334:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-06-03 14:19:39,335:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-06-03 14:19:39,335:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-06-03 14:19:39,335:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-06-03 14:19:39,335:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-06-03 14:19:39,335:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-06-03 14:19:39,336:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-06-03 14:19:39,336:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-06-03 14:19:39,336:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-06-03 14:19:39,336:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-06-03 14:19:39,337:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-06-03 14:19:39,337:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-06-03 14:19:39,337:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-06-03 14:19:39,337:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-06-03 14:19:39,337:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-06-03 14:19:39,338:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-06-03 14:19:39,338:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-06-03 14:19:39,338:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-06-03 14:19:39,338:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-06-03 14:19:39,338:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-06-03 14:19:39,338:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-06-03 14:19:39,339:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-06-03 14:19:39,339:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-06-03 14:19:39,339:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-06-03 14:19:39,340:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-06-03 14:19:39,340:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-06-03 14:19:39,340:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-06-03 14:19:39,340:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-06-03 14:19:39,341:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-06-03 14:19:39,341:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-06-03 14:19:39,342:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-06-03 14:19:39,342:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-06-03 14:19:39,342:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-06-03 14:19:39,342:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-06-03 14:19:39,342:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-06-03 14:19:39,343:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-06-03 14:19:39,343:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-06-03 14:19:39,343:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-06-03 14:19:39,343:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-06-03 14:19:39,343:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-06-03 14:19:39,344:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-06-03 14:19:39,344:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-06-03 14:19:39,344:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-06-03 14:19:39,344:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-06-03 14:19:39,345:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-06-03 14:19:39,345:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-06-03 14:19:39,345:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-06-03 14:19:39,345:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-06-03 14:19:39,346:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-06-03 14:19:39,346:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-06-03 14:19:39,346:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-06-03 14:19:39,346:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-06-03 14:21:45,473:INFO:Initializing load_model()
+2021-06-03 14:21:45,473:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-06-03 14:21:45,630:INFO:Initializing predict_model()
+2021-06-03 14:21:45,630:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-03 14:21:45,630:INFO:Checking exceptions
+2021-06-03 14:21:45,630:INFO:Preloading libraries
+2021-06-03 14:21:45,667:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-06-03 14:21:45,667:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-06-03 14:21:45,667:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-06-03 14:21:45,668:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-06-03 14:21:45,668:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-06-03 14:21:45,669:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-06-03 14:21:45,669:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-06-03 14:21:45,669:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-06-03 14:21:45,669:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-06-03 14:21:45,669:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-06-03 14:21:45,669:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-06-03 14:21:45,669:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-06-03 14:21:45,670:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-06-03 14:21:45,671:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-06-03 14:21:45,672:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-06-03 14:21:45,673:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-06-03 14:21:45,674:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-06-03 14:21:45,675:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-06-03 14:21:45,675:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-06-03 14:21:45,675:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-06-03 14:21:45,675:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-06-03 14:21:45,675:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-06-03 14:21:45,780:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-06-03 14:21:45,780:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-06-03 14:21:45,781:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-06-03 14:21:45,781:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-06-03 14:21:45,781:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-06-03 14:21:45,781:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-06-03 14:21:45,782:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-06-03 14:21:45,782:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-06-03 14:21:45,782:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-06-03 14:21:45,782:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-06-03 14:21:45,783:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-06-03 14:21:45,783:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-06-03 14:21:45,783:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-06-03 14:21:45,783:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-06-03 14:21:45,783:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-06-03 14:21:45,784:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-06-03 14:21:45,784:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-06-03 14:21:45,784:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-06-03 14:21:45,784:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-06-03 14:21:45,784:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-06-03 14:21:45,785:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-06-03 14:21:45,785:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-06-03 14:21:45,785:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-06-03 14:21:45,785:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-06-03 14:21:45,786:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-06-03 14:21:45,786:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-06-03 14:21:45,786:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-06-03 14:21:45,787:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-06-03 14:21:45,787:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-06-03 14:21:45,787:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-06-03 14:21:45,787:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-06-03 14:21:45,787:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-06-03 14:21:45,787:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-06-03 14:21:45,788:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-06-03 14:21:45,788:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-06-03 14:21:45,788:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-06-03 14:21:45,788:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-06-03 14:21:45,788:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-06-03 14:21:45,789:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-06-03 14:21:45,789:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-06-03 14:21:45,789:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-06-03 14:21:45,789:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-06-03 14:21:45,790:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-06-03 14:21:45,790:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-06-03 14:21:45,790:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-06-03 14:21:45,790:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-06-03 14:21:45,791:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-06-03 14:21:45,791:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-06-03 14:21:45,791:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-06-03 14:21:45,791:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-06-03 14:21:45,791:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-06-03 14:21:45,792:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-06-03 14:21:45,792:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-06-03 14:21:45,792:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-06-03 14:21:45,792:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-06-03 14:21:45,792:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-06-03 14:21:45,793:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-06-03 14:21:45,793:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-06-03 14:21:45,793:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-06-03 14:21:45,793:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-06-03 14:21:45,793:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-06-03 14:21:45,794:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-06-03 14:21:45,794:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-06-03 14:21:45,794:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-06-03 14:21:45,794:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-06-03 14:21:45,795:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-06-03 14:21:45,795:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-06-03 14:21:45,795:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-06-03 14:21:45,795:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-06-03 14:21:45,795:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-06-03 14:21:45,796:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-06-03 14:21:45,796:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-06-03 14:21:45,796:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-06-03 14:21:45,797:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-06-03 14:21:45,797:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-06-03 14:21:45,797:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-06-03 14:21:45,797:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-06-03 14:21:45,797:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-06-03 14:21:45,797:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-06-03 14:21:45,797:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-06-03 17:26:04,051:INFO:Initializing load_model()
+2021-06-03 17:26:04,051:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-06-03 17:26:04,234:INFO:Initializing predict_model()
+2021-06-03 17:26:04,234:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-03 17:26:04,234:INFO:Checking exceptions
+2021-06-03 17:26:04,234:INFO:Preloading libraries
+2021-06-03 17:26:04,277:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-06-03 17:26:04,277:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-06-03 17:26:04,278:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-06-03 17:26:04,278:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-06-03 17:26:04,278:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-06-03 17:26:04,278:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-06-03 17:26:04,278:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-06-03 17:26:04,278:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-06-03 17:26:04,278:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-06-03 17:26:04,278:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-06-03 17:26:04,279:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-06-03 17:26:04,279:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-06-03 17:26:04,279:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-06-03 17:26:04,279:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-06-03 17:26:04,279:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-06-03 17:26:04,279:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-06-03 17:26:04,279:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-06-03 17:26:04,279:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-06-03 17:26:04,280:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-06-03 17:26:04,280:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-06-03 17:26:04,280:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-06-03 17:26:04,280:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-06-03 17:26:04,280:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-06-03 17:26:04,280:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-06-03 17:26:04,281:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-06-03 17:26:04,281:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-06-03 17:26:04,281:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-06-03 17:26:04,281:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-06-03 17:26:04,281:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-06-03 17:26:04,281:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-06-03 17:26:04,282:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-06-03 17:26:04,282:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-06-03 17:26:04,282:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-06-03 17:26:04,282:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-06-03 17:26:04,282:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-06-03 17:26:04,283:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-06-03 17:26:04,283:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-06-03 17:26:04,283:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-06-03 17:26:04,283:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-06-03 17:26:04,284:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-06-03 17:26:04,284:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-06-03 17:26:04,284:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-06-03 17:26:04,284:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-06-03 17:26:04,284:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-06-03 17:26:04,284:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-06-03 17:26:04,284:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-06-03 17:26:04,284:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-06-03 17:26:04,285:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-06-03 17:26:04,285:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-06-03 17:26:04,285:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-06-03 17:26:04,285:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-06-03 17:26:04,286:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-06-03 17:26:04,286:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-06-03 17:26:04,287:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-06-03 17:26:04,287:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-06-03 17:26:04,287:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-06-03 17:26:04,288:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-06-03 17:26:04,288:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-06-03 17:26:04,288:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-06-03 17:26:04,288:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-06-03 17:26:04,289:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-06-03 17:26:04,289:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-06-03 17:26:04,289:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-06-03 17:26:04,289:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-06-03 17:26:04,290:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-06-03 17:26:04,290:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-06-03 17:26:04,291:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-06-03 17:26:04,291:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-06-03 17:26:04,292:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-06-03 17:26:04,292:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-06-03 17:26:04,293:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-06-03 17:26:04,293:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-06-03 17:26:04,293:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-06-03 17:26:04,293:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-06-03 17:26:04,293:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-06-03 17:26:04,294:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-06-03 17:26:04,294:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-06-03 17:26:04,294:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-06-03 17:26:04,294:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-06-03 17:26:04,294:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-06-03 17:26:04,405:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-06-03 17:26:04,405:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-06-03 17:26:04,405:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-06-03 17:26:04,406:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-06-03 17:26:04,406:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-06-03 17:26:04,406:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-06-03 17:26:04,406:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-06-03 17:26:04,406:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-06-03 17:26:04,407:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-06-03 17:26:04,407:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-06-03 17:26:04,407:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-06-03 17:26:04,407:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-06-03 17:26:04,408:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-06-03 17:26:04,408:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-06-03 17:26:04,408:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-06-03 17:26:04,408:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-06-03 17:26:04,409:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-06-03 17:26:04,409:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-06-03 17:26:04,409:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-06-03 17:26:04,410:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-06-03 17:26:04,410:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-06-03 17:26:04,411:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-06-03 17:26:04,411:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-06-03 17:26:04,411:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-06-03 17:26:04,411:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-06-03 17:26:04,412:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-06-03 17:26:04,412:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-06-03 17:26:04,412:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-06-03 17:26:04,412:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-06-03 17:26:04,413:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-06-03 17:26:04,413:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-06-03 17:26:04,413:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-06-03 17:26:04,413:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-06-03 17:26:04,414:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-06-03 17:26:04,414:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-06-03 17:26:04,414:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-06-03 17:26:04,414:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-06-03 17:26:04,414:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-06-03 17:26:04,415:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-06-03 17:26:04,415:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-06-03 17:26:04,415:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-06-03 17:26:04,415:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-06-03 17:26:04,415:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-06-03 17:26:04,416:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-06-03 17:26:04,416:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-06-03 17:26:04,416:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-06-03 17:26:04,416:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-06-03 17:26:04,417:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-06-03 17:26:04,417:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-06-03 17:26:04,417:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-06-03 17:26:04,417:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-06-03 17:26:04,417:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-06-03 17:26:04,418:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-06-03 17:26:04,418:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-06-03 17:26:04,418:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-06-03 17:26:04,418:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-06-03 17:26:04,418:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-06-03 17:26:04,419:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-06-03 17:26:04,419:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-06-03 17:26:04,419:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-06-03 17:26:04,419:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-06-03 17:26:04,420:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-06-03 17:26:04,420:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-06-03 17:26:04,420:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-06-03 17:26:04,420:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-06-03 17:26:04,421:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-06-03 17:26:04,421:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-06-03 17:26:04,421:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-06-03 17:26:04,421:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-06-03 17:26:04,422:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-06-03 17:26:04,422:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-06-03 17:26:04,422:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-06-03 17:26:04,422:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-06-03 17:26:04,422:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-06-03 17:26:04,423:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-06-03 17:26:04,423:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-06-03 17:26:04,423:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-06-03 17:26:04,423:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-06-03 17:26:04,424:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-06-03 17:26:04,424:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-06-04 11:05:24,776:INFO:Initializing load_model()
+2021-06-04 11:05:24,776:INFO:load_model(model_name=C:\Users\Admin\Documents\5_6174891034263159160\Rainfall_prediction\src\model\Rainfallclassymodel, platform=None, authentication=None, verbose=True)
+2021-06-04 11:05:24,928:INFO:Initializing predict_model()
+2021-06-04 11:05:24,928:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['WindGustDir',
+                                                            'WindDir9am',
+                                                            'WindDir3pm',
+                                                            'RainToday'],
+                                      ml_usecase='classification',
+                                      numerical_features=['MinTemp', 'MaxTemp',
+                                                          'Rainfall',
+                                                          'WindGustSpeed',
+                                                          'WindSpeed9am',
+                                                          'WindSpeed3pm',
+                                                          'Humidity9am',
+                                                          'Humidity3pm',
+                                                          'Pressure9am',
+                                                          'Pressure3pm',
+                                                          'Temp9am',
+                                                          'Temp3pm'],
+                                      target='RainTomorrow')),
+                ('...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 LGBMClassifier(bagging_fraction=0.6, bagging_freq=3,
+                                device='gpu', feature_fraction=1.0,
+                                min_child_samples=6, min_split_gain=0.6,
+                                n_estimators=300, num_leaves=30,
+                                random_state=6268, reg_alpha=2,
+                                reg_lambda=0.3)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-04 11:05:24,928:INFO:Checking exceptions
+2021-06-04 11:05:24,928:INFO:Preloading libraries
+2021-06-04 11:05:24,978:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-06-04 11:05:24,978:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-06-04 11:05:24,978:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-06-04 11:05:24,979:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-06-04 11:05:24,980:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-06-04 11:05:24,981:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-06-04 11:05:24,982:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-06-04 11:05:24,982:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-06-04 11:05:24,982:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-06-04 11:05:24,982:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-06-04 11:05:24,982:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-06-04 11:05:24,984:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-06-04 11:05:24,985:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-06-04 11:05:24,986:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-06-04 11:05:24,986:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-06-04 11:05:24,986:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-06-04 11:05:24,986:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-06-04 11:05:24,986:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-06-04 11:05:24,987:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-06-04 11:05:24,988:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-06-04 11:05:24,989:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-06-04 11:05:24,989:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-06-04 11:05:24,989:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-06-04 11:05:24,989:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-06-04 11:05:24,989:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-06-04 11:05:24,989:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-06-04 11:05:24,989:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-06-04 11:05:24,989:INFO:Iterative Imputation: 20 cycle | WindDir9am
+2021-06-04 11:05:25,103:INFO:Iterative Imputation: 1 cycle | Rainfall
+2021-06-04 11:05:25,103:INFO:Iterative Imputation: 1 cycle | WindSpeed9am
+2021-06-04 11:05:25,103:INFO:Iterative Imputation: 1 cycle | RainToday
+2021-06-04 11:05:25,104:INFO:Iterative Imputation: 1 cycle | WindDir9am
+2021-06-04 11:05:25,104:INFO:Iterative Imputation: 2 cycle | Rainfall
+2021-06-04 11:05:25,104:INFO:Iterative Imputation: 2 cycle | WindSpeed9am
+2021-06-04 11:05:25,104:INFO:Iterative Imputation: 2 cycle | RainToday
+2021-06-04 11:05:25,105:INFO:Iterative Imputation: 2 cycle | WindDir9am
+2021-06-04 11:05:25,105:INFO:Iterative Imputation: 3 cycle | Rainfall
+2021-06-04 11:05:25,105:INFO:Iterative Imputation: 3 cycle | WindSpeed9am
+2021-06-04 11:05:25,105:INFO:Iterative Imputation: 3 cycle | RainToday
+2021-06-04 11:05:25,106:INFO:Iterative Imputation: 3 cycle | WindDir9am
+2021-06-04 11:05:25,106:INFO:Iterative Imputation: 4 cycle | Rainfall
+2021-06-04 11:05:25,106:INFO:Iterative Imputation: 4 cycle | WindSpeed9am
+2021-06-04 11:05:25,106:INFO:Iterative Imputation: 4 cycle | RainToday
+2021-06-04 11:05:25,107:INFO:Iterative Imputation: 4 cycle | WindDir9am
+2021-06-04 11:05:25,107:INFO:Iterative Imputation: 5 cycle | Rainfall
+2021-06-04 11:05:25,107:INFO:Iterative Imputation: 5 cycle | WindSpeed9am
+2021-06-04 11:05:25,107:INFO:Iterative Imputation: 5 cycle | RainToday
+2021-06-04 11:05:25,107:INFO:Iterative Imputation: 5 cycle | WindDir9am
+2021-06-04 11:05:25,108:INFO:Iterative Imputation: 6 cycle | Rainfall
+2021-06-04 11:05:25,108:INFO:Iterative Imputation: 6 cycle | WindSpeed9am
+2021-06-04 11:05:25,108:INFO:Iterative Imputation: 6 cycle | RainToday
+2021-06-04 11:05:25,108:INFO:Iterative Imputation: 6 cycle | WindDir9am
+2021-06-04 11:05:25,109:INFO:Iterative Imputation: 7 cycle | Rainfall
+2021-06-04 11:05:25,109:INFO:Iterative Imputation: 7 cycle | WindSpeed9am
+2021-06-04 11:05:25,109:INFO:Iterative Imputation: 7 cycle | RainToday
+2021-06-04 11:05:25,109:INFO:Iterative Imputation: 7 cycle | WindDir9am
+2021-06-04 11:05:25,109:INFO:Iterative Imputation: 8 cycle | Rainfall
+2021-06-04 11:05:25,109:INFO:Iterative Imputation: 8 cycle | WindSpeed9am
+2021-06-04 11:05:25,110:INFO:Iterative Imputation: 8 cycle | RainToday
+2021-06-04 11:05:25,110:INFO:Iterative Imputation: 8 cycle | WindDir9am
+2021-06-04 11:05:25,110:INFO:Iterative Imputation: 9 cycle | Rainfall
+2021-06-04 11:05:25,110:INFO:Iterative Imputation: 9 cycle | WindSpeed9am
+2021-06-04 11:05:25,110:INFO:Iterative Imputation: 9 cycle | RainToday
+2021-06-04 11:05:25,111:INFO:Iterative Imputation: 9 cycle | WindDir9am
+2021-06-04 11:05:25,111:INFO:Iterative Imputation: 10 cycle | Rainfall
+2021-06-04 11:05:25,111:INFO:Iterative Imputation: 10 cycle | WindSpeed9am
+2021-06-04 11:05:25,111:INFO:Iterative Imputation: 10 cycle | RainToday
+2021-06-04 11:05:25,111:INFO:Iterative Imputation: 10 cycle | WindDir9am
+2021-06-04 11:05:25,111:INFO:Iterative Imputation: 11 cycle | Rainfall
+2021-06-04 11:05:25,112:INFO:Iterative Imputation: 11 cycle | WindSpeed9am
+2021-06-04 11:05:25,112:INFO:Iterative Imputation: 11 cycle | RainToday
+2021-06-04 11:05:25,112:INFO:Iterative Imputation: 11 cycle | WindDir9am
+2021-06-04 11:05:25,112:INFO:Iterative Imputation: 12 cycle | Rainfall
+2021-06-04 11:05:25,112:INFO:Iterative Imputation: 12 cycle | WindSpeed9am
+2021-06-04 11:05:25,113:INFO:Iterative Imputation: 12 cycle | RainToday
+2021-06-04 11:05:25,113:INFO:Iterative Imputation: 12 cycle | WindDir9am
+2021-06-04 11:05:25,113:INFO:Iterative Imputation: 13 cycle | Rainfall
+2021-06-04 11:05:25,113:INFO:Iterative Imputation: 13 cycle | WindSpeed9am
+2021-06-04 11:05:25,113:INFO:Iterative Imputation: 13 cycle | RainToday
+2021-06-04 11:05:25,114:INFO:Iterative Imputation: 13 cycle | WindDir9am
+2021-06-04 11:05:25,114:INFO:Iterative Imputation: 14 cycle | Rainfall
+2021-06-04 11:05:25,114:INFO:Iterative Imputation: 14 cycle | WindSpeed9am
+2021-06-04 11:05:25,114:INFO:Iterative Imputation: 14 cycle | RainToday
+2021-06-04 11:05:25,114:INFO:Iterative Imputation: 14 cycle | WindDir9am
+2021-06-04 11:05:25,114:INFO:Iterative Imputation: 15 cycle | Rainfall
+2021-06-04 11:05:25,115:INFO:Iterative Imputation: 15 cycle | WindSpeed9am
+2021-06-04 11:05:25,115:INFO:Iterative Imputation: 15 cycle | RainToday
+2021-06-04 11:05:25,115:INFO:Iterative Imputation: 15 cycle | WindDir9am
+2021-06-04 11:05:25,115:INFO:Iterative Imputation: 16 cycle | Rainfall
+2021-06-04 11:05:25,115:INFO:Iterative Imputation: 16 cycle | WindSpeed9am
+2021-06-04 11:05:25,116:INFO:Iterative Imputation: 16 cycle | RainToday
+2021-06-04 11:05:25,117:INFO:Iterative Imputation: 16 cycle | WindDir9am
+2021-06-04 11:05:25,117:INFO:Iterative Imputation: 17 cycle | Rainfall
+2021-06-04 11:05:25,119:INFO:Iterative Imputation: 17 cycle | WindSpeed9am
+2021-06-04 11:05:25,119:INFO:Iterative Imputation: 17 cycle | RainToday
+2021-06-04 11:05:25,120:INFO:Iterative Imputation: 17 cycle | WindDir9am
+2021-06-04 11:05:25,120:INFO:Iterative Imputation: 18 cycle | Rainfall
+2021-06-04 11:05:25,120:INFO:Iterative Imputation: 18 cycle | WindSpeed9am
+2021-06-04 11:05:25,120:INFO:Iterative Imputation: 18 cycle | RainToday
+2021-06-04 11:05:25,121:INFO:Iterative Imputation: 18 cycle | WindDir9am
+2021-06-04 11:05:25,121:INFO:Iterative Imputation: 19 cycle | Rainfall
+2021-06-04 11:05:25,121:INFO:Iterative Imputation: 19 cycle | WindSpeed9am
+2021-06-04 11:05:25,121:INFO:Iterative Imputation: 19 cycle | RainToday
+2021-06-04 11:05:25,121:INFO:Iterative Imputation: 19 cycle | WindDir9am
+2021-06-04 11:05:25,121:INFO:Iterative Imputation: 20 cycle | Rainfall
+2021-06-04 11:05:25,122:INFO:Iterative Imputation: 20 cycle | WindSpeed9am
+2021-06-04 11:05:25,122:INFO:Iterative Imputation: 20 cycle | RainToday
+2021-06-04 11:05:25,122:INFO:Iterative Imputation: 20 cycle | WindDir9am

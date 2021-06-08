@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rainfall Prediction System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="{{url_for('static',filename='styles/index.css')}}""/>  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+      <script src="{{url_for('static',filename='styles/index.js')}}"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+    </style>
+    </head>
+    <body>
+    <section class="report">
+      <a href="/prediction" class="home_button"><button type="button"><i class="fas fa-arrow-left"></i>&nbsp; Back</button></a>
+     <h1 class="title">Rainfall Prediction System</h1>
+     <h2 class="title"> Report</h2>
+     <br/>
+     <div class="report-info">
+     <h2>Filename: {{filename}}</h2>
+     <h2>Total Test Samples: {{data_length}}</h2>
+     </div>
+     <form action="/download/csv" class="report_generation">
+     <button type="Submit">Download</button>
+     </form>
+    </section>
+    <br/><br/>
+    {{plot0 | safe}}<br>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rainfall Prediction System</title>
+        <meta name="description" content="">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/index.css')}}""/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+      <script src="{{url_for('static',filename='styles/index.js')}}"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+    </style>
+    </head>
+    <body>
+     <nav class="nav-wrapper">
+      <div class="logo">
+       
+      </div>
+      <ul class="nav-list">
+        <li class="active"><a href="#welcome">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+
+     <section class="welcome" id="welcome">
+      <div class="welcome-intro">
+        <div class="welcome-content">
+          <h1>
+           RAINFALL PREDICTION SYSTEM
+          </h1>
+          <h2 >
+           A place that help users to the predict the rainfall flow based on the given input data.
+          </h2>
+          <br /><br />
+          <form action="/prediction" method="get">
+            <button
+              type="submit"/ >
+              Start Prediction
+            </button>
+          </form>
+        </div>
+         </div>
+    </section>
+     <section class="features" id="features">
+      
+    <br /><br />
+      <h1 >Features</h1>
+      <div class="featurebox">
+      <div class="feature">
+      <h2>Predicting Rainfall</h2>
+     <p>
+ Our system analyses the data from the given input and predicts whether there will be a rain tomorrow or not. And also using the data of
+  average flow of rainfall of four months the average flow of rainfall for the next consecutive month can be c alculated.
+     </p>
+      </div>
+      <div class="feature">
+     <h2>Chart based output</h2>
+     <p>From the given data it analyses and produces Visual Representation using Chart Studio which is a sub-product of Plotly</p>
+      </div>
+      <div class="feature">
+     <h2>Download Predicted Data</h2>
+     <p>
+        Our System lets users download the predicted csv file, if user provides the data through csv. Users can also download the plots
+            which is provided by Plotly.
+     </p>
+      </div>
+      </div>
+         </section>
+         <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+         <footer>
+         <section class="about" id="about">
+        <div class="about-content">
+          <h2>About Us</h2>
+      <div class="about-team">
+      <div class="team">
+<h3><br/><br/><br/><br/>Created By,
+<br/> Prabu Srimanigandan R 
+<br/> Santhosh Kumar S</h3>
+      </div>
+      </div>
+          </div>
+      
+    </section>
+    </footer>
+    </body>
+</html>

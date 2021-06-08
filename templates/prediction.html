@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rainfall prediction System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="{{url_for('static',filename='styles/index.css')}}""/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="{{url_for('static',filename='styles/index.js')}}"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+    </style>
+
+    </head>
+    <body>
+    <section class="instructions">
+      <a href="/" class="home_button"><button type="button"><i class="fas fa-home"></i>&nbsp;Home</button></a>
+      <h1 class="title">Rainfall Prediction System</h1>
+      <br />
+      <h2>Steps:-</h2>
+      <div class="steps">
+        <h2>
+          <ol>
+            <li>To predict the Average flow  of rainfall for the consecutive month <a href="#monthwise">click here</a> .</li><br><br>
+            <li>To predict weather there is a rainfall on tomorrow or not <a href="#Daywise">click here</a> .  </li>
+            <br /><br />
+            <li>Choose a CSV file with respective fields</li><br/><br/>
+            <li>After selecting the file click on Upload</li>
+          </ol>
+        </h2>
+        </div>
+    </section>
+    <br/><br/><br/><br/>
+    <section class="monthwise" id="monthwise">
+    <p> Upload your CSV file here for predicting the Avg. flow of rainfall</p>
+    <br/><br/>
+    <form action="upload" method="POST" enctype = "multipart/form-data">
+        <input  type="file" accept=".csv"   value="Choose_File"  id="upload_monthfile"  class="upload_monthfile" name="upload_monthfile"
+          required
+        />
+        <button type="submit" >Upload</button>
+      </form>
+    </section>
+     <br/><br/><br/><br/>
+    <section class="monthwise" id="Daywise">
+    <p> Upload your CSV file here for predicting the rainfall</p>
+    <br/><br/>
+    <form action="dayupload" method="POST" enctype = "multipart/form-data">
+        <input  type="file" accept=".csv"   value="Choose_File"  id="upload_file"  class="upload_dayfile" name="upload_dayfile"
+          required
+        />
+        <button type="submit" >Upload</button>
+         {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+      {% endfor %}
+      </form>
+       </section>
+       </body>
+      
+</html>
+      
